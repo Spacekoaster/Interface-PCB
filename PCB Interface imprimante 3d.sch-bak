@@ -1,0 +1,329 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5EEB5ED8
+P 5650 4000
+F 0 "J6" H 5730 4037 50  0000 L CNN
+F 1 "Conn_01x02" H 5730 3946 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 5650 4000 50  0001 C CNN
+F 3 "~" H 5650 4000 50  0001 C CNN
+F 4 "Heat_Cartridge1" H 5730 3855 50  0000 L CNN "Rôle"
+	1    5650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5EEB682E
+P 5650 4300
+F 0 "J7" H 5730 4337 50  0000 L CNN
+F 1 "Conn_01x02" H 5730 4246 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 5650 4300 50  0001 C CNN
+F 3 "~" H 5650 4300 50  0001 C CNN
+F 4 "Thermistor" H 5730 4155 50  0000 L CNN "Rôle"
+	1    5650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EEE5489
+P 3700 5500
+F 0 "R1" H 3770 5546 50  0000 L CNN
+F 1 "R" H 3770 5455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3630 5500 50  0001 C CNN
+F 3 "~" H 3700 5500 50  0001 C CNN
+	1    3700 5500
+	1    0    0    -1  
+$EndComp
+Text Label 5450 4800 2    50   ~ 0
+Green
+Text Label 5450 4700 2    50   ~ 0
+Red
+Text Label 5450 4600 2    50   ~ 0
+Black
+Text Label 5450 4300 2    50   ~ 0
+TH1
+Text Label 5450 4400 2    50   ~ 0
+TH2
+Text Label 5450 4000 2    50   ~ 0
+HE1
+Text Label 5450 4100 2    50   ~ 0
+HE2
+Text Label 5450 3800 2    50   ~ 0
+SIGNAL
+Text Label 5450 3150 2    50   ~ 0
+PWM
+Text Label 5450 2450 2    50   ~ 0
++24V
+Text Label 5450 2650 2    50   ~ 0
+PWM
+Text Label 5450 2000 2    50   ~ 0
+24V
+$Comp
+L power:+5V #PWR0101
+U 1 1 5EED7CE5
+P 5450 3600
+F 0 "#PWR0101" H 5450 3450 50  0001 C CNN
+F 1 "+5V" H 5465 3773 50  0000 C CNN
+F 2 "" H 5450 3600 50  0001 C CNN
+F 3 "" H 5450 3600 50  0001 C CNN
+	1    5450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5EEDB2B4
+P 4850 4000
+F 0 "#PWR0103" H 4850 3750 50  0001 C CNN
+F 1 "GND" H 4855 3827 50  0000 C CNN
+F 2 "" H 4850 4000 50  0001 C CNN
+F 3 "" H 4850 4000 50  0001 C CNN
+	1    4850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5EEB5473
+P 5650 3700
+F 0 "J5" H 5730 3787 50  0000 L CNN
+F 1 "Conn_01x03" H 5730 3696 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 5650 3700 50  0001 C CNN
+F 3 "~" H 5650 3700 50  0001 C CNN
+F 4 "Probe" H 5730 3605 50  0000 L CNN "Rôle"
+	1    5650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5EED81C4
+P 5650 3050
+F 0 "J4" H 5730 3137 50  0000 L CNN
+F 1 "Conn_01x03" H 5730 3046 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 5650 3050 50  0001 C CNN
+F 3 "~" H 5650 3050 50  0001 C CNN
+F 4 "Parts_Fan" H 5730 2955 50  0000 L CNN "Rôle"
+	1    5650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EEE4972
+P 2450 4650
+F 0 "H1" H 2550 4696 50  0000 L CNN
+F 1 "MountingHole" H 2550 4605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2450 4650 50  0001 C CNN
+F 3 "~" H 2450 4650 50  0001 C CNN
+	1    2450 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EEE5460
+P 2450 5050
+F 0 "H3" H 2550 5096 50  0000 L CNN
+F 1 "MountingHole" H 2550 5005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2450 5050 50  0001 C CNN
+F 3 "~" H 2450 5050 50  0001 C CNN
+	1    2450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EEE54A8
+P 2450 4850
+F 0 "H2" H 2550 4896 50  0000 L CNN
+F 1 "MountingHole" H 2550 4805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2450 4850 50  0001 C CNN
+F 3 "~" H 2450 4850 50  0001 C CNN
+	1    2450 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EEE54F0
+P 2450 5250
+F 0 "H4" H 2550 5296 50  0000 L CNN
+F 1 "MountingHole" H 2550 5205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2450 5250 50  0001 C CNN
+F 3 "~" H 2450 5250 50  0001 C CNN
+	1    2450 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5EED57F0
+P 5650 2550
+F 0 "J3" H 5730 2637 50  0000 L CNN
+F 1 "Conn_01x03" H 5730 2546 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 5650 2550 50  0001 C CNN
+F 3 "~" H 5650 2550 50  0001 C CNN
+F 4 "Parts_Fan" H 5730 2455 50  0000 L CNN "Rôle"
+	1    5650 2550
+	1    0    0    -1  
+$EndComp
+Text Label 5450 2950 2    50   ~ 0
++24V
+Wire Wire Line
+	5450 3700 4850 3700
+Wire Wire Line
+	4850 3700 4850 4000
+Wire Wire Line
+	5450 3050 4850 3050
+Wire Wire Line
+	4850 3050 4850 3700
+Connection ~ 4850 3700
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5EED4F25
+P 5650 2000
+F 0 "J2" H 5730 2037 50  0000 L CNN
+F 1 "Conn_01x02" H 5730 1946 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 5650 2000 50  0001 C CNN
+F 3 "~" H 5650 2000 50  0001 C CNN
+F 4 "HotEnd_Fan" H 5730 1855 50  0000 L CNN "Rôle"
+	1    5650 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2100 4850 2100
+Wire Wire Line
+	4850 2100 4850 2550
+Connection ~ 4850 3050
+Wire Wire Line
+	5450 2550 4850 2550
+Connection ~ 4850 2550
+Wire Wire Line
+	4850 2550 4850 3050
+Text Label 5450 4900 2    50   ~ 0
+Blue
+Text Label 3850 3450 0    50   ~ 0
+HE1
+Wire Wire Line
+	3850 2950 4300 2950
+$Comp
+L power:GND #PWR0104
+U 1 1 5EEE671D
+P 4300 2950
+F 0 "#PWR0104" H 4300 2700 50  0001 C CNN
+F 1 "GND" H 4305 2777 50  0000 C CNN
+F 2 "" H 4300 2950 50  0001 C CNN
+F 3 "" H 4300 2950 50  0001 C CNN
+	1    4300 2950
+	1    0    0    -1  
+$EndComp
+Text Label 3850 4050 0    50   ~ 0
+Blue
+Wire Wire Line
+	3850 2850 4200 2850
+$Comp
+L Connector:Conn_01x16_Female J1
+U 1 1 5EED04C7
+P 3650 3250
+F 0 "J1" H 3678 3226 50  0000 L CNN
+F 1 " RJHSE508002" H 3678 3135 50  0000 L CNN
+F 2 "RJHSE508002:RJHSE508002" H 3650 3250 50  0001 C CNN
+F 3 "~" H 3650 3250 50  0001 C CNN
+	1    3650 3250
+	-1   0    0    -1  
+$EndComp
+Text Label 3850 2550 0    50   ~ 0
+24V
+$Comp
+L power:+5V #PWR0102
+U 1 1 5EEDA49F
+P 4200 2850
+F 0 "#PWR0102" H 4200 2700 50  0001 C CNN
+F 1 "+5V" H 4215 3023 50  0000 C CNN
+F 2 "" H 4200 2850 50  0001 C CNN
+F 3 "" H 4200 2850 50  0001 C CNN
+	1    4200 2850
+	1    0    0    -1  
+$EndComp
+Text Label 3850 2650 0    50   ~ 0
++24V
+Text Label 3850 2750 0    50   ~ 0
+PWM
+Text Label 3850 3050 0    50   ~ 0
+SIGNAL
+Text Label 3850 3350 0    50   ~ 0
+HE1
+Text Label 3850 3650 0    50   ~ 0
+HE2
+Text Label 3850 3150 0    50   ~ 0
+TH1
+Text Label 3850 3250 0    50   ~ 0
+TH2
+Text Label 3850 3750 0    50   ~ 0
+Black
+Text Label 3850 3850 0    50   ~ 0
+Red
+Text Label 3850 3950 0    50   ~ 0
+Green
+Text Label 3850 3550 0    50   ~ 0
+HE2
+$Comp
+L Device:LED D1
+U 1 1 5EEE6826
+P 3700 5100
+F 0 "D1" V 3784 4983 50  0000 R CNN
+F 1 "LED" V 3693 4983 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3700 5100 50  0001 C CNN
+F 3 "~" H 3700 5100 50  0001 C CNN
+F 4 "150 Ohms" V 3602 4983 50  0000 R CNN "Valeur"
+	1    3700 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5EEEB9C4
+P 3700 4800
+F 0 "#PWR0105" H 3700 4650 50  0001 C CNN
+F 1 "+5V" H 3715 4973 50  0000 C CNN
+F 2 "" H 3700 4800 50  0001 C CNN
+F 3 "" H 3700 4800 50  0001 C CNN
+	1    3700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5EEEBFE7
+P 3700 5800
+F 0 "#PWR0106" H 3700 5550 50  0001 C CNN
+F 1 "GND" H 3705 5627 50  0000 C CNN
+F 2 "" H 3700 5800 50  0001 C CNN
+F 3 "" H 3700 5800 50  0001 C CNN
+	1    3700 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4800 3700 4950
+Wire Wire Line
+	3700 5250 3700 5350
+Wire Wire Line
+	3700 5650 3700 5800
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5EEB7197
+P 5650 4700
+F 0 "J8" H 5730 4737 50  0000 L CNN
+F 1 "Conn_01x04" H 5730 4646 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5650 4700 50  0001 C CNN
+F 3 "~" H 5650 4700 50  0001 C CNN
+F 4 "Motor" H 5730 4555 50  0000 L CNN "Rôle"
+	1    5650 4700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
